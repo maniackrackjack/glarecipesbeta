@@ -36,7 +36,7 @@
 
   <!-- Right: calculation panel -->
   <div
-    id="panel"
+    id="calc-panel"
     data-i18n="aria.calcPanel"
     data-i18n-attr="aria-label"
     aria-label="Painel de Cálculos">
@@ -52,15 +52,15 @@
     </div>
 
     <div class="panel-box small-muted">
-      <span id="lbl-total-cost" data-i18n="ui.totalCostLabel">🧮 Custo Total</span>
-      <strong id="total-cost">Ƀ 0</strong>
-    </div>
-
-    <div class="panel-box small-muted">
       <span id="lbl-sell-price" data-i18n="ui.sellPriceLabel">💰 Preço de Venda (por unidade)</span>
       <input type="number" id="sell-price" value="0" step="0.01" min="0">
     </div>
 
+    <div class="panel-box small-muted">
+      <span id="lbl-total-cost" data-i18n="ui.totalCostLabel">🧮 Custo Total</span>
+      <strong id="total-cost">Ƀ 0</strong>
+    </div>
+    
     <div class="panel-box small-muted">
       <span id="lbl-fee" data-i18n="ui.feeLabel">🧾 Taxa (3%)</span>
       <strong id="fee">Ƀ 0</strong>
