@@ -90,16 +90,37 @@ body {
   margin-top: 10px;
 }
 .ingredient {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 40px 1fr auto; /* sprite fixa, nome flexível, valores fixos */
+  gap: 8px;
   align-items: center;
   background: rgba(255,255,255,0.03);
   padding: 8px;
   border-radius: 6px;
   margin-bottom: 8px;
 }
+
 .ingredient img {
-  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.ingredient-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ingredient-qty {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+
+.ingredient-value {
+  color: #ffcc00;
 }
 
 /* Right: calculation panel */
@@ -107,17 +128,18 @@ body {
   flex: 1;
   min-width: 200px;
   background: #6b564c;
-  padding: 12px;
+  padding: 24px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
 }
-.painel-box {
-  background: rgba(0,0,0,0.05);
+.panel-box {
+  background: rgba(0,0,0,0.35);
   padding: 10px;
   border-radius: 8px;
   color: #f4f4f4;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
 /* Destaque para valores Berry */
@@ -125,18 +147,18 @@ body {
   font-weight: bold;
   color: #ffcc00; /* Berry padrão */
 }
-.output.profit {
+.profit {
   color: #4cff4c; /* Verde positivo para lucro */
   text-shadow: 0 0 4px rgba(76,255,76,0.5);
 }
-.output.loss {
+.loss {
   color: #ff4c4c; /* Vermelho para prejuízo */
   text-shadow: 0 0 4px rgba(255,76,76,0.5);
 }
 
 /* Campos numéricos */
 input[type="number"] {
-  width: 100%;
+  width: 90%;
   padding: 8px;
   border-radius: 6px;
   border: none;
