@@ -257,14 +257,14 @@
     "cooldown": 180,
     "ingredients": [
       { "id": 3, "quantity": 8 },
-      { "id": 21, "quantity": 2 },
       { "id": 11, "quantity": 1 },
       { "id": 13, "quantity": 1 },
-      { "id": 24, "quantity": 1 },
-      { "id": 20, "quantity": 1 },
       { "id": 15, "quantity": 3 },
+      { "id": 18, "quantity": 3 },
       { "id": 19, "quantity": 1 },
-      { "id": 18, "quantity": 3 }
+      { "id": 20, "quantity": 1 },
+      { "id": 21, "quantity": 2 },
+      { "id": 24, "quantity": 1 }
     ]
   }
 ]
