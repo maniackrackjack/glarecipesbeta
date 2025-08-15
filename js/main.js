@@ -171,10 +171,16 @@ function updatePanelValues() {
   const qty = parseInt(document.getElementById('qty').value) || 1;
 
   let unitCost = 0;
-// atualiza cada ingrediente conforme quantidade desejada
+
+  // atualiza cada ingrediente conforme quantidade desejada
 selectedRecipe.ingredients.forEach(ing => {
   const item = itemsById[ing.id];
   if (!item) return;
+  
+  // soma ao custo unitário (sem multiplicar pela qty global ainda)
+  unitCost += item.value * ing.quantity;
+
+  // atualiza display
   const row = document.querySelector(`.ingredient[data-id="${ing.id}"]`);
   if (row) {
     row.querySelector('.ingredient-qty').textContent = `× ${ing.quantity * qty}`;
