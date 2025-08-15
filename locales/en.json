@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "🍽️ Recipe Helper"
+  },
+  "aria": {
+    "recipesList": "Recipes list",
+    "calcPanel": "Calculation panel"
+  },
+  "ui": {
+    "selectRecipe": "Select a recipe",
+    "qtyLabel": "📦 Quantity (1–100)",
+    "unitCostLabel": "⚙️ Unit cost (per item)",
+    "totalCostLabel": "🧮 Total cost",
+    "sellPriceLabel": "💰 Sale price (per unit)",
+    "feeLabel": "🧾 Fee ({percent}%)",
+    "profitLabel": "🤑 Profit",
+    "levelLabel": "Level",
+    "secondsSuffix": "s",
+    "unitAbbr": "(unit.)",
+    "loadingError": "Error loading files. Check the console for details."
+  },
+  "currency": {
+    "berry": {
+      "symbol": "Ƀ",
+      "name": "Berry",
+      "namePlural": "Berries"
+    }
+  },
+  "item": {
+    "premium_raw_beef": "Premium Raw Beef",
+    "raw_lobster": "Raw Lobster",
+    "raw_shrimp": "Raw Shrimp",
+    "raw_rabbit_meat": "Raw Rabbit Meat",
+    "raw_fish": "Raw Fish",
+    "tuna": "Tuna",
+    "oyster": "Oyster",
+    "bacon": "Bacon",
+    "egg": "Egg",
+    "butter": "Butter",
+    "green_leaves": "Green Leaves",
+    "lettuce": "Lettuce",
+    "tomatoes": "Tomatoes",
+    "lemon": "Lemon",
+    "water": "Water",
+    "white_wine": "White Wine",
+    "mushroom": "Mushroom",
+    "white_truffle": "White Truffle",
+    "salt": "Salt",
+    "pepper": "Pepper",
+    "rice": "Rice",
+    "garlic": "Garlic",
+    "potato": "Potato",
+    "olive_oil": "Olive Oil",
+    "onion": "Onion",
+    "heavy_cream": "Heavy Cream",
+    "pasta": "Pasta",
+    "cheese": "Cheese",
+    "crab_meat": "Crab Meat",
+    "raw_octopus": "Raw Octopus",
+    "chicken": "Chicken",
+    "raw_lamb_meat": "Raw Lamb Meat"
+  },
+  "recipe": {
+    "steak_and_egg_skillet": "Steak and Egg Skillet",
+    "italian_salad": "Italian Salad",
+    "meat_medallion": "Meat Medallion",
+    "gourmet_meat_skewer": "Gourmet Meat Skewer",
+    "rabbit_curry": "Rabbit Curry",
+    "shrimp_scampi": "Shrimp Scampi",
+    "oyster_stew": "Oyster Stew",
+    "seafood_paella": "Seafood Paella",
+    "grilled_tuna": "Grilled Tuna",
+    "wagyu_beef": "Wagyu Beef",
+    "octopus_skewer": "Octopus Skewer",
+    "crab_soup": "Crab Soup",
+    "lamb_meat": "Lamb Meat",
+    "grilled_octopus": "Grilled Octopus",
+    "teriyaki_chicken": "Teriyaki Chicken",
+    "shrimp_paella": "Shrimp Paella"
+  }
+}

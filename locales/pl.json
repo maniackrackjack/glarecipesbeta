@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "🍽️ Pomocnik do przepisów"
+  },
+  "aria": {
+    "recipesList": "Lista przepisów",
+    "calcPanel": "Panel obliczeń"
+  },
+  "ui": {
+    "selectRecipe": "Wybierz przepis",
+    "qtyLabel": "📦 Ilość (1–100)",
+    "unitCostLabel": "⚙️ Koszt jednostkowy (za sztukę)",
+    "totalCostLabel": "🧮 Koszt całkowity",
+    "sellPriceLabel": "💰 Cena sprzedaży (za sztukę)",
+    "feeLabel": "🧾 Opłata ({percent}%)",
+    "profitLabel": "🤑 Zysk",
+    "levelLabel": "Poziom",
+    "secondsSuffix": "s",
+    "unitAbbr": "(szt.)",
+    "loadingError": "Błąd ładowania plików. Sprawdź konsolę, aby uzyskać szczegóły."
+  },
+  "currency": {
+    "berry": {
+      "symbol": "Ƀ",
+      "name": "Berry",
+      "namePlural": "Berries"
+    }
+  },
+  "item": {
+    "premium_raw_beef": "Surowa wołowina wysokiej jakości",
+    "raw_lobster": "Surowy homar",
+    "raw_shrimp": "Surowa krewetka",
+    "raw_rabbit_meat": "Surowe mięso królika",
+    "raw_fish": "Surowa ryba",
+    "tuna": "Tuńczyk",
+    "oyster": "Ostryga",
+    "bacon": "Boczek",
+    "egg": "Jajko",
+    "butter": "Masło",
+    "green_leaves": "Zielone liście",
+    "lettuce": "Sałata",
+    "tomatoes": "Pomidory",
+    "lemon": "Cytryna",
+    "water": "Woda",
+    "white_wine": "Białe wino",
+    "mushroom": "Grzyb",
+    "white_truffle": "Biała trufla",
+    "salt": "Sól",
+    "pepper": "Pieprz",
+    "rice": "Ryż",
+    "garlic": "Czosnek",
+    "potato": "Ziemniaki",
+    "olive_oil": "Oliwa z oliwek",
+    "onion": "Cebula",
+    "heavy_cream": "Gęsta śmietana",
+    "pasta": "Makaron",
+    "cheese": "Ser",
+    "crab_meat": "Mięso kraba",
+    "raw_octopus": "Surowa ośmiornica",
+    "chicken": "Kurczak",
+    "raw_lamb_meat": "Surowa jagnięcina"
+  },
+  "recipe": {
+    "steak_and_egg_skillet": "Stek i jajko z patelni",
+    "italian_salad": "Sałatka włoska",
+    "meat_medallion": "Medalion mięsny",
+    "gourmet_meat_skewer": "Wyśmienity szaszłyk mięsny",
+    "rabbit_curry": "Curry z królikiem",
+    "shrimp_scampi": "Krewetki scampi",
+    "oyster_stew": "Duszone ostrygi",
+    "seafood_paella": "Paella z owocami morza",
+    "grilled_tuna": "Grillowany tuńczyk",
+    "wagyu_beef": "Wołowina Wagyu",
+    "octopus_skewer": "Szaszłyk z ośmiornicy",
+    "crab_soup": "Zupa krabowa",
+    "lamb_meat": "Jagnięcina",
+    "grilled_octopus": "Grillowana ośmiornica",
+    "teriyaki_chicken": "Kurczak teriyaki",
+    "shrimp_paella": "Krewetkowa paella"
+  }
+}

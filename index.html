@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <title data-i18n="app.title">🍽️ Helper de Receitas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Language selector -->
+  <header>
+  <div id="lang-selector" aria-label="Language selector">
+    <button data-lang="pt" title="Português" aria-label="Português">🇧🇷</button>
+    <button data-lang="en" title="English" aria-label="English">🇺🇸</button>
+    <button data-lang="es" title="Español" aria-label="Español">🇪🇸</button>
+    <button data-lang="pl" title="Polski" aria-label="Polski">🇵🇱</button>
+  </div>
+  </header>
+
+  <!-- Left: recipes list -->
+  <div
+    id="recipe-list"
+    data-i18n="aria.recipesList"
+    data-i18n-attr="aria-label"
+    aria-label="Lista de Receitas">
+  </div>
+
+  <!-- Middle: details -->
+  <div id="details">
+    <h2 id="recipe-name" data-i18n="ui.selectRecipe">Selecione uma Receita</h2>
+    <p>
+      <span id="recipe-level" class="small-muted"></span>
+      <span id="recipe-cooldown" class="small-muted"></span>
+    </p>
+    <div id="ingredients-list"></div>
+  </div>
+
+  <!-- Right: calculation panel -->
+  <div
+    id="panel"
+    data-i18n="aria.calcPanel"
+    data-i18n-attr="aria-label"
+    aria-label="Painel de Cálculos">
+
+    <div class="panel-box small-muted">
+      <span id="lbl-qty" data-i18n="ui.qtyLabel">📦 Quantidade (1–100)</span>
+      <input type="number" id="qty" min="1" max="100" value="1">
+    </div>
+
+    <div class="panel-box small-muted">
+      <span id="lbl-unit-cost" data-i18n="ui.unitCostLabel">⚙️ Custo Unitário (por item)</span>
+      <strong id="unit-cost">Ƀ 0</strong>
+    </div>
+
+    <div class="panel-box small-muted">
+      <span id="lbl-total-cost" data-i18n="ui.totalCostLabel">🧮 Custo Total</span>
+      <strong id="total-cost">Ƀ 0</strong>
+    </div>
+
+    <div class="panel-box small-muted">
+      <span id="lbl-sell-price" data-i18n="ui.sellPriceLabel">💰 Preço de Venda (por unidade)</span>
+      <input type="number" id="sell-price" value="0" step="0.01" min="0">
+    </div>
+
+    <div class="panel-box small-muted">
+      <span id="lbl-fee" data-i18n="ui.feeLabel">🧾 Taxa (3%)</span>
+      <strong id="fee">Ƀ 0</strong>
+    </div>
+
+    <div class="panel-box small-muted">
+      <span id="lbl-profit" data-i18n="ui.profitLabel">🤑 Lucro</span>
+      <strong id="profit">Ƀ 0</strong>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/money.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // PT como padrão
+    setLang('pt');
+
+    // Troca de idioma pelo seletor
+    document.querySelectorAll('#lang-selector [data-lang]').forEach(btn => {
+      btn.addEventListener('click', () => setLang(btn.dataset.lang));
+    });
+  </script>
+</body>
+</html>

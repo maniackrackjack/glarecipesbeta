@@ -1,0 +1,270 @@
+[
+  {
+    "labelKey": "recipe.steak_and_egg_skillet",
+    "sprite": "sprites/recipes/steak_and_egg_skillet.png",
+    "level": 70,
+    "cooldown": 300,
+    "ingredients": [
+      { "id": 1, "quantity": 3 },
+      { "id": 9, "quantity": 2 },
+      { "id": 11, "quantity": 1 },
+      { "id": 19, "quantity": 4 },
+      { "id": 20, "quantity": 2 },
+      { "id": 24, "quantity": 1 }
+    ]
+  },
+  {
+    "labelKey": "recipe.italian_salad",
+    "sprite": "sprites/recipes/italian_salad.png",
+    "level": 70,
+    "cooldown": 180,
+    "ingredients": [
+      { "id": 11, "quantity": 1 },
+      { "id": 12, "quantity": 5 },
+      { "id": 13, "quantity": 3 },
+      { "id": 18, "quantity": 5 },
+      { "id": 19, "quantity": 1 },
+      { "id": 23, "quantity": 2 },
+      { "id": 24, "quantity": 1 }
+    ]
+  },
+  {
+    "labelKey": "recipe.meat_medallion",
+    "sprite": "sprites/recipes/meat_medallion.png",
+    "level": 80,
+    "cooldown": 300,
+    "ingredients": [
+      { "id": 1, "quantity": 3 },
+      { "id": 8, "quantity": 8 },
+      { "id": 11, "quantity": 1 },
+      { "id": 14, "quantity": 2 },
+      { "id": 15, "quantity": 4 },
+      { "id": 19, "quantity": 2 },
+      { "id": 22, "quantity": 1 },
+      { "id": 23, "quantity": 4 },
+      { "id": 24, "quantity": 3 }
+    ]
+  },
+  {
+    "labelKey": "recipe.gourmet_meat_skewer",
+    "sprite": "sprites/recipes/gourmet_meat_skewer.png",
+    "level": 80,
+    "cooldown": 180,
+    "ingredients": [
+      { "id": 1, "quantity": 4 },
+      { "id": 8, "quantity": 5 },
+      { "id": 11, "quantity": 3 },
+      { "id": 16, "quantity": 1 },
+      { "id": 19, "quantity": 2 },
+      { "id": 20, "quantity": 3 },
+      { "id": 24, "quantity": 3 },
+      { "id": 25, "quantity": 4 }
+    ]
+  },
+  {
+    "labelKey": "recipe.rabbit_curry",
+    "sprite": "sprites/recipes/rabbit_curry.png",
+    "level": 90,
+    "cooldown": 300,
+    "ingredients": [
+      { "id": 4, "quantity": 5 },
+      { "id": 9, "quantity": 1 },
+      { "id": 13, "quantity": 2 },
+      { "id": 19, "quantity": 2 },
+      { "id": 20, "quantity": 2 },
+      { "id": 22, "quantity": 1 },
+      { "id": 24, "quantity": 2 },
+      { "id": 25, "quantity": 1 }
+    ]
+  },
+  {
+    "labelKey": "recipe.shrimp_scampi",
+    "sprite": "sprites/recipes/shrimp_scampi.png",
+    "level": 90,
+    "cooldown": 180,
+    "ingredients": [
+      { "id": 3, "quantity": 4 },
+      { "id": 10, "quantity": 1 },
+      { "id": 11, "quantity": 2 },
+      { "id": 14, "quantity": 2 },
+      { "id": 16, "quantity": 1 },
+      { "id": 18, "quantity": 1 },
+      { "id": 19, "quantity": 1 },
+      { "id": 20, "quantity": 2 },
+      { "id": 22, "quantity": 4 },
+      { "id": 24, "quantity": 3 }
+    ]
+  },
+  {
+    "labelKey": "recipe.oyster_stew",
+    "sprite": "sprites/recipes/oyster_stew.png",
+    "level": 100,
+    "cooldown": 300,
+    "ingredients": [
+      { "id": 7, "quantity": 3 },
+      { "id": 10, "quantity": 2 },
+      { "id": 19, "quantity": 2 },
+      { "id": 20, "quantity": 2 },
+      { "id": 22, "quantity": 1 },
+      { "id": 25, "quantity": 1 },
+      { "id": 26, "quantity": 1 }
+    ]
+  },
+  {
+    "labelKey": "recipe.seafood_paella",
+    "sprite": "sprites/recipes/seafood_paella.png",
+    "level": 100,
+    "cooldown": 180,
+    "ingredients": [
+      { "id": 2, "quantity": 3 },
+      { "id": 3, "quantity": 5 },
+      { "id": 5, "quantity": 1 },
+      { "id": 11, "quantity": 1 },
+      { "id": 13, "quantity": 1 },
+      { "id": 15, "quantity": 3 },
+      { "id": 19, "quantity": 1 },
+      { "id": 20, "quantity": 1 },
+      { "id": 21, "quantity": 2 },
+      { "id": 24, "quantity": 1 }
+    ]
+  },
+  {
+    "labelKey": "recipe.grilled_tuna",
+    "sprite": "sprites/recipes/grilled_tuna.png",
+    "level": 110,
+    "cooldown": 300,
+    "ingredients": [
+      { "id": 6, "quantity": 5 },
+      { "id": 10, "quantity": 2 },
+      { "id": 11, "quantity": 2 },
+      { "id": 12, "quantity": 4 },
+      { "id": 14, "quantity": 2 },
+      { "id": 16, "quantity": 1 },
+      { "id": 20, "quantity": 2 },
+      { "id": 22, "quantity": 2 },
+      { "id": 24, "quantity": 2 }
+    ]
+  },
+  {
+    "labelKey": "recipe.wagyu_beef",
+    "sprite": "sprites/recipes/wagyu_beef.png",
+    "level": 110,
+    "cooldown": 180,
+    "ingredients": [
+      { "id": 1, "quantity": 6 },
+      { "id": 11, "quantity": 4 },
+      { "id": 14, "quantity": 2 },
+      { "id": 16, "quantity": 1 },
+      { "id": 17, "quantity": 5 },
+      { "id": 18, "quantity": 2 },
+      { "id": 19, "quantity": 4 },
+      { "id": 20, "quantity": 3 },
+      { "id": 22, "quantity": 2 },
+      { "id": 24, "quantity": 6 },
+      { "id": 25, "quantity": 3 }
+    ]
+  },
+  {
+    "labelKey": "recipe.octopus_skewer",
+    "sprite": "sprites/recipes/octopus_skewer.png",
+    "level": 120,
+    "cooldown": 300,
+    "ingredients": [
+      { "id": 19, "quantity": 4 },
+      { "id": 20, "quantity": 1 },
+      { "id": 22, "quantity": 2 },
+      { "id": 24, "quantity": 2 },
+      { "id": 25, "quantity": 1 },
+      { "id": 30, "quantity": 3 }
+    ]
+  },
+  {
+    "labelKey": "recipe.crab_soup",
+    "sprite": "sprites/recipes/crab_soup.png",
+    "level": 120,
+    "cooldown": 180,
+    "ingredients": [
+      { "id": 11, "quantity": 3 },
+      { "id": 13, "quantity": 6 },
+      { "id": 15, "quantity": 9 },
+      { "id": 18, "quantity": 2 },
+      { "id": 19, "quantity": 2 },
+      { "id": 20, "quantity": 4 },
+      { "id": 25, "quantity": 3 },
+      { "id": 27, "quantity": 13 },
+      { "id": 28, "quantity": 3 },
+      { "id": 29, "quantity": 4 }
+    ]
+  },
+  {
+    "labelKey": "recipe.lamb_meat",
+    "sprite": "sprites/recipes/lamb_meat.png",
+    "level": 130,
+    "cooldown": 300,
+    "ingredients": [
+      { "id": 11, "quantity": 2 },
+      { "id": 14, "quantity": 1 },
+      { "id": 16, "quantity": 1 },
+      { "id": 17, "quantity": 2 },
+      { "id": 18, "quantity": 1 },
+      { "id": 19, "quantity": 2 },
+      { "id": 20, "quantity": 1 },
+      { "id": 22, "quantity": 2 },
+      { "id": 24, "quantity": 3 },
+      { "id": 25, "quantity": 2 },
+      { "id": 32, "quantity": 1 }
+    ]
+  },
+  {
+    "labelKey": "recipe.grilled_octopus",
+    "sprite": "sprites/recipes/grilled_octopus.png",
+    "level": 130,
+    "cooldown": 180,
+    "ingredients": [
+      { "id": 11, "quantity": 3 },
+      { "id": 13, "quantity": 6 },
+      { "id": 18, "quantity": 1 },
+      { "id": 19, "quantity": 4 },
+      { "id": 22, "quantity": 2 },
+      { "id": 24, "quantity": 2 },
+      { "id": 25, "quantity": 2 },
+      { "id": 26, "quantity": 3 },
+      { "id": 28, "quantity": 3 },
+      { "id": 30, "quantity": 5 }
+    ]
+  },
+  {
+    "labelKey": "recipe.teriyaki_chicken",
+    "sprite": "sprites/recipes/teriyaki_chicken.png",
+    "level": 140,
+    "cooldown": 300,
+    "ingredients": [
+      { "id": 11, "quantity": 3 },
+      { "id": 13, "quantity": 3 },
+      { "id": 18, "quantity": 3 },
+      { "id": 19, "quantity": 2 },
+      { "id": 20, "quantity": 1 },
+      { "id": 22, "quantity": 3 },
+      { "id": 24, "quantity": 6 },
+      { "id": 26, "quantity": 3 },
+      { "id": 31, "quantity": 5 }
+    ]
+  },
+  {
+    "labelKey": "recipe.shrimp_paella",
+    "sprite": "sprites/recipes/shrimp_paella.png",
+    "level": 140,
+    "cooldown": 180,
+    "ingredients": [
+      { "id": 3, "quantity": 8 },
+      { "id": 21, "quantity": 2 },
+      { "id": 11, "quantity": 1 },
+      { "id": 13, "quantity": 1 },
+      { "id": 24, "quantity": 1 },
+      { "id": 20, "quantity": 1 },
+      { "id": 15, "quantity": 3 },
+      { "id": 19, "quantity": 1 },
+      { "id": 18, "quantity": 3 }
+    ]
+  }
+]

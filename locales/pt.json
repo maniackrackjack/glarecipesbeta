@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "🍽️ Helper de Receitas"
+  },
+  "aria": {
+    "recipesList": "Lista de Receitas",
+    "calcPanel": "Painel de Cálculos"
+  },
+  "ui": {
+    "selectRecipe": "Selecione uma Receita",
+    "qtyLabel": "📦 Quantidade (1–100)",
+    "unitCostLabel": "⚙️ Custo Unitário (por item)",
+    "totalCostLabel": "🧮 Custo Total",
+    "sellPriceLabel": "💰 Preço de Venda (por unidade)",
+    "feeLabel": "🧾 Taxa ({percent}%)",
+    "profitLabel": "🤑 Lucro",
+    "levelLabel": "Nível",
+    "secondsSuffix": "s",
+    "unitAbbr": "(unid.)",
+    "loadingError": "Erro ao carregar os arquivos. Verifique o console para mais detalhes."
+  },
+  "currency": {
+    "berry": {
+      "symbol": "Ƀ",
+      "name": "Berry",
+      "namePlural": "Berries"
+    }
+  },
+  "item": {
+    "premium_raw_beef": "Bife Cru Premium",
+    "raw_lobster": "Lagosta Crua",
+    "raw_shrimp": "Camarão Cru",
+    "raw_rabbit_meat": "Carne Crua de Coelho",
+    "raw_fish": "Peixe Cru",
+    "tuna": "Atum",
+    "oyster": "Ostra",
+    "bacon": "Bacon",
+    "egg": "Ovo",
+    "butter": "Manteiga",
+    "green_leaves": "Folhas Verdes",
+    "lettuce": "Alface",
+    "tomatoes": "Tomates",
+    "lemon": "Limão",
+    "water": "Água",
+    "white_wine": "Vinho Branco",
+    "mushroom": "Cogumelo",
+    "white_truffle": "Trufa Branca",
+    "salt": "Sal",
+    "pepper": "Pimenta",
+    "rice": "Arroz",
+    "garlic": "Alho",
+    "potato": "Batata",
+    "olive_oil": "Azeite",
+    "onion": "Cebola",
+    "heavy_cream": "Creme de Leite",
+    "pasta": "Pasta",
+    "cheese": "Queijo",
+    "crab_meat": "Carne de Caranguejo",
+    "raw_octopus": "Polvo Cru",
+    "chicken": "Galinha",
+    "raw_lamb_meat": "Carne de Cordeiro Crua"
+  },
+  "recipe": {
+    "steak_and_egg_skillet": "Bife e Ovo de Frigideira",
+    "italian_salad": "Salada Italiana",
+    "meat_medallion": "Medalhão de Carne",
+    "gourmet_meat_skewer": "Espeto de Carne Gourmet",
+    "rabbit_curry": "Curry de Coelho",
+    "shrimp_scampi": "Camarões Salteados",
+    "oyster_stew": "Ensopado de Ostra",
+    "seafood_paella": "Paella de Frutos do Mar",
+    "grilled_tuna": "Atum Grelhado",
+    "wagyu_beef": "Bife Wagyu",
+    "octopus_skewer": "Espetinho de Polvo",
+    "crab_soup": "Sopa de Caranguejo",
+    "lamb_meat": "Carne de Cordeiro",
+    "grilled_octopus": "Polvo Grelhado",
+    "teriyaki_chicken": "Frango Teriyaki",
+    "shrimp_paella": "Paella de Camarão"
+  }
+}

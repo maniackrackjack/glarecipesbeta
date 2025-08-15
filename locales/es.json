@@ -1,0 +1,81 @@
+{
+  "app": {
+    "title": "🍽️ Ayudante de Recetas"
+  },
+  "aria": {
+    "recipesList": "Lista de Recetas",
+    "calcPanel": "Panel de Cálculo"
+  },
+  "ui": {
+    "selectRecipe": "Seleccionar una Receta",
+    "qtyLabel": "📦 Cantidad (1–100)",
+    "unitCostLabel": "⚙️ Costo Unitario (por artículo)",
+    "totalCostLabel": "🧮 Costo Total",
+    "sellPriceLabel": "💰 Precio de Venta (por unidad)",
+    "feeLabel": "🧾 Tarifa ({percent}%)",
+    "profitLabel": "🤑 Beneficio",
+    "levelLabel": "Nivel",
+    "secondsSuffix": "s",
+    "unitAbbr": "(artículos)",
+    "loadingError": "Error al cargar los archivos. Consulta la consola para más detalles."
+  },
+  "currency": {
+    "berry": {
+      "symbol": "Ƀ",
+      "name": "Berry",
+      "namePlural": "Berries"
+    }
+  },
+  "item": {
+    "premium_raw_beef": "Ternera Cruda Premium",
+    "raw_lobster": "Langosta Cruda",
+    "raw_shrimp": "Camarón Crudo",
+    "raw_rabbit_meat": "Carne de Conejo Cruda",
+    "raw_fish": "Pescado Crudo",
+    "tuna": "Atún",
+    "oyster": "Ostra",
+    "bacon": "Tocino",
+    "egg": "Huevo",
+    "butter": "Manteca",
+    "green_leaves": "Hojas Verdes",
+    "lettuce": "Lechuga",
+    "tomatoes": "Tomates",
+    "lemon": "Limón",
+    "water": "Agua",
+    "white_wine": "Vino Blanco",
+    "mushroom": "Hongo",
+    "white_truffle": "Trufa Blanca",
+    "salt": "Sal",
+    "pepper": "Pimienta",
+    "rice": "Arroz",
+    "garlic": "Ajo",
+    "potato": "Patata",
+    "olive_oil": "Aceite de Oliva",
+    "onion": "Cebolla",
+    "heavy_cream": "Crema Espesa",
+    "pasta": "Pasta",
+    "cheese": "Queso",
+    "crab_meat": "Carne de Cangrejo",
+    "raw_octopus": "Pulpo Crudo",
+    "chicken": "Pollo",
+    "raw_lamb_meat": "Carne Cruda de Cordero"
+  },
+  "recipe": {
+    "steak_and_egg_skillet": "Cacerola con Bistec y Huevo",
+    "italian_salad": "Ensalada Italiana",
+    "meat_medallion": "Medallón de Carne",
+    "gourmet_meat_skewer": "Brocheta de Carne Gourmet",
+    "rabbit_curry": "Curry de Conejo",
+    "shrimp_scampi": "Gambas al Ajillo",
+    "oyster_stew": "Estofado de Ostras",
+    "seafood_paella": "Paella de Mariscos",
+    "grilled_tuna": "Atún a la Parrilla",
+    "wagyu_beef": "Carne de Wagyu",
+    "octopus_skewer": "Brocheta de Pulpo",
+    "crab_soup": "Sopa de Cangrejo",
+    "lamb_meat": "Carne de Cordero",
+    "grilled_octopus": "Pulpo a la Plancha",
+    "teriyaki_chicken": "Pollo Teriyaki",
+    "shrimp_paella": "Paella de Camarones"
+  }
+}
