@@ -29,7 +29,7 @@ function getLocaleTag(lang) {
 async function loadLocale(lang) {
   const res = await fetch(`locales/${lang}.json`);
   translations = await res.json();
-  formatter = new Intl.NumberFormat(getLocaleTag(lang), { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  formatter = new Intl.NumberFormat(getLocaleTag(lang));
   document.documentElement.lang = lang;
   document.title = t('app.title');
   applyTranslations();
@@ -120,33 +120,30 @@ function selectRecipe(r) {
     const itemData = itemsById[ing.id];
     if (!itemData) return;
 
+    // Contêiner de toda a linha
     const row = document.createElement('div');
     row.className = 'ingredient';
     row.dataset.id = ing.id;
 
-    const left = document.createElement('div');
-    left.style.display = 'flex';
-    left.style.alignItems = 'center';
-    left.style.gap = '8px';
-
+    // Coluna 1: Sprite
     const img = document.createElement('img');
     img.src = itemData.sprite;
     img.alt = t(itemData.labelKey);
-    img.height = 32; // mantém proporção
-    img.style.width = 'auto';
+    img.width = 32;
+    img.height = 32;
+    img.style.objectFit = 'contain';
 
+    // Coluna 2: Nome
     const name = document.createElement('span');
+    name.className = 'ingredient-name';
     name.textContent = t(itemData.labelKey);
 
-    left.appendChild(img);
-    left.appendChild(name);
-
-    const right = document.createElement('div');
-    right.style.textAlign = 'right';
+    // Coluna 3: Quantidade + valor
+    const qtyValContainer = document.createElement('div');
+    qtyValContainer.style.textAlign = 'right';
 
     const qtySpan = document.createElement('div');
     qtySpan.className = 'ingredient-qty';
-    qtySpan.style.fontWeight = 'bold';
     qtySpan.textContent = `× ${ing.quantity}`;
 
     const valSpan = document.createElement('div');
@@ -154,11 +151,14 @@ function selectRecipe(r) {
     valSpan.style.color = '#ffcc00';
     valSpan.textContent = formatBerry(itemData.value * ing.quantity);
 
-    right.appendChild(qtySpan);
-    right.appendChild(valSpan);
+    qtyValContainer.appendChild(qtySpan);
+    qtyValContainer.appendChild(valSpan);
 
-    row.appendChild(left);
-    row.appendChild(right);
+    // Montagem da linha
+    row.appendChild(img);
+    row.appendChild(name);
+    row.appendChild(qtyValContainer);
+
     ingList.appendChild(row);
   });
 
@@ -167,31 +167,38 @@ function selectRecipe(r) {
 
 // --- Calculations ---
 function updatePanelValues() {
+  const qtyInput = document.getElementById('qty');
+  let qty = parseInt(qtyInput.value, 10);
+
+  // Normaliza quantidade: mínimo 1, máximo 100
+  if (!Number.isFinite(qty) || qty < 1) qty = 1;
+  if (qty > 100) qty = 100;
+  qtyInput.value = qty;
+
   if (!selectedRecipe) return;
-  const qty = parseInt(document.getElementById('qty').value) || 1;
 
   let unitCost = 0;
 
   // atualiza cada ingrediente conforme quantidade desejada
-selectedRecipe.ingredients.forEach(ing => {
-  const item = itemsById[ing.id];
-  if (!item) return;
-  
-  // soma ao custo unitário (sem multiplicar pela qty global ainda)
-  unitCost += item.value * ing.quantity;
+  selectedRecipe.ingredients.forEach(ing => {
+    const item = itemsById[ing.id];
+    if (!item) return;
 
-  // atualiza display
-  const row = document.querySelector(`.ingredient[data-id="${ing.id}"]`);
-  if (row) {
-    row.querySelector('.ingredient-qty').textContent = `× ${ing.quantity * qty}`;
-    row.querySelector('.ingredient-value').textContent = formatBerry(item.value * ing.quantity * qty);
-  }
-});
+    // soma ao custo unitário (sem multiplicar pela qty global ainda)
+    unitCost += item.value * ing.quantity;
+
+    // atualiza display
+    const row = document.querySelector(`.ingredient[data-id="${ing.id}"]`);
+    if (row) {
+      row.querySelector('.ingredient-qty').textContent = `× ${ing.quantity * qty}`;
+      row.querySelector('.ingredient-value').textContent = formatBerry(item.value * ing.quantity * qty);
+    }
+  });
 
   const totalCost = unitCost * qty;
   const sellPrice = parseFloat(document.getElementById('sell-price').value) || 0;
-  const fee = sellPrice * qty * 0.03;
-  const profit = sellPrice * qty - totalCost - fee;
+  const fee = Math.round(sellPrice * qty * 0.03);
+  const profit = Math.round(sellPrice * qty - totalCost - fee);
 
   document.getElementById('unit-cost').textContent = formatBerry(unitCost);
   document.getElementById('total-cost').textContent = formatBerry(totalCost);
