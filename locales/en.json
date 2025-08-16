@@ -14,6 +14,8 @@
     "sellPriceLabel": "💰 Sale price (per unit)",
     "feeLabel": "🧾 Fee ({percent}%)",
     "profitLabel": "🤑 Profit",
+    "cookTimeLabel": "⏱️ Cooking Time",
+    "bagSlotsLabel": "🎒 Required Bag Slots",
     "levelLabel": "Level",
     "secondsSuffix": "s",
     "unitAbbr": "(unit.)",

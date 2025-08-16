@@ -14,6 +14,8 @@
     "sellPriceLabel": "💰 Cena sprzedaży (za sztukę)",
     "feeLabel": "🧾 Opłata ({percent}%)",
     "profitLabel": "🤑 Zysk",
+    "cookTimeLabel": "⏱️ Czas Gotowania",
+    "bagSlotsLabel": "🎒 Wymagane Sloty w Torbie",
     "levelLabel": "Poziom",
     "secondsSuffix": "s",
     "unitAbbr": "(szt.)",

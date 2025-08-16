@@ -109,8 +109,11 @@ function buildRecipeList() {
 
 function selectRecipe(r) {
   selectedRecipe = r;
-  document.getElementById('recipe-name').textContent = t(r.labelKey);
-  document.getElementById('recipe-level').textContent = `${t('ui.levelLabel')} ${r.level}`;
+  const recipeNameEl = document.getElementById('recipe-name');
+    recipeNameEl.innerHTML = `
+  <img src="${r.sprite}" alt="${t(r.labelKey)}" class="recipe-icon">
+  ${t(r.labelKey)}
+`;  document.getElementById('recipe-level').textContent = `${t('ui.levelLabel')} ${r.level}`;
   document.getElementById('recipe-cooldown').textContent = `${r.cooldown}${t('ui.secondsSuffix')}`;
 
   const ingList = document.getElementById('ingredients-list');
@@ -175,6 +178,12 @@ function updatePanelValues() {
   if (qty > 100) qty = 100;
   qtyInput.value = qty;
 
+  // Normaliza preço de venda: mínimo 0
+  const sellPriceInput = document.getElementById('sell-price');
+  let sellPrice = parseInt(sellPriceInput.value, 10);
+  if (!Number.isFinite(sellPrice) || sellPrice < 0) sellPrice = 0;
+  sellPriceInput.value = sellPrice;
+
   if (!selectedRecipe) return;
 
   let unitCost = 0;
@@ -196,13 +205,31 @@ function updatePanelValues() {
   });
 
   const totalCost = unitCost * qty;
-  const sellPrice = parseFloat(document.getElementById('sell-price').value) || 0;
   const fee = Math.round(sellPrice * qty * 0.03);
   const profit = Math.round(sellPrice * qty - totalCost - fee);
 
+  // Tempo total de produção em minutos
+  const totalMinutes = qty * 5;
+  const hours = Math.floor(totalMinutes / 60);
+  const minutes = totalMinutes % 60;
+
+  const prodTimeText = hours > 0
+    ? `${hours}h ${minutes}min`
+    : `${minutes}min`;
+
+  // Slots na bag: cada ingrediente ocupa pelo menos 1 slot, cada slot até 100 unidades
+  let totalSlots = 0;
+  selectedRecipe.ingredients.forEach(ing => {
+    const neededUnits = ing.quantity * qty;
+    totalSlots += Math.ceil(neededUnits / 100);
+  });
+
+  // Atualiza o painel de resultados
   document.getElementById('unit-cost').textContent = formatBerry(unitCost);
   document.getElementById('total-cost').textContent = formatBerry(totalCost);
   document.getElementById('fee').textContent = formatBerry(fee);
+  document.getElementById('prod-time').textContent = prodTimeText;
+  document.getElementById('bag-slots').textContent = `${totalSlots} slots`;
 
   // Aplicar cor dinâmica ao lucro
   const profitEl = document.getElementById('profit');

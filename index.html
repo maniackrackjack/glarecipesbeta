@@ -43,7 +43,7 @@
 
     <div class="panel-box small-muted">
       <span id="lbl-qty" data-i18n="ui.qtyLabel">📦 Quantidade (1–100)</span>
-      <input type="number" id="qty" min="1" max="100" value="1">
+      <input type="number" id="qty" min="1" value="1">
     </div>
 
     <div class="panel-box small-muted">
@@ -53,7 +53,7 @@
 
     <div class="panel-box small-muted">
       <span id="lbl-sell-price" data-i18n="ui.sellPriceLabel">💰 Preço de Venda (por unidade)</span>
-      <input type="number" id="sell-price" value="0" step="0.01" min="0">
+      <input type="number" id="sell-price" min="1" max="999999999" value="0" step="1">
     </div>
 
     <div class="panel-box small-muted">
@@ -70,7 +70,18 @@
       <span id="lbl-profit" data-i18n="ui.profitLabel">🤑 Lucro</span>
       <strong id="profit">Ƀ 0</strong>
     </div>
-  </div>
+
+    <div class="panel-box small-muted">
+      <span id="lbl-prod-time" data-i18n="ui.cookTimeLabel">⏱️ Tempo de Cozimento</span>
+      <strong id="prod-time">0 min</strong>
+    </div>
+
+    <div class="panel-box small-muted">
+      <span id="lbl-bag-slots" data-i18n="ui.bagSlotsLabel">🎒 Slots Necessários na Bag</span>
+      <strong id="bag-slots">0</strong>
+    </div>
+
+</div>
 
   <!-- Scripts -->
   <script src="js/i18n.js"></script>

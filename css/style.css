@@ -75,7 +75,15 @@ body {
   box-sizing: border-box;
   overflow-y: auto;
 }
+.recipe-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
 #recipe-name {
+  display: flex;
+  align-items: center;
   margin: 0 0 4px 0;
   font-size: 20px;
 }
@@ -140,6 +148,17 @@ body {
   border-radius: 8px;
   color: #f4f4f4;
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.panel-box.small-muted span,
+.panel-box.small-muted strong {
+  display: block;       /* cada elemento em sua própria linha */
+  text-align: left;   /* centraliza o texto */
+}
+
+.panel-box.small-muted strong {
+  font-size: 1.2em;     /* valor mais chamativo */
+  margin-top: 4px;      /* espaçamento entre label e valor */
 }
 
 /* Destaque para valores Berry */
